@@ -1,0 +1,1828 @@
+/* Custom Japanese-inspired professional color palette */
+:root {
+    --color-sumi-black: #1A1A1A;
+    /* Charcoal/Ink Black */
+    --color-kurenai-red: #C91F37;
+    /* Crimson Red */
+    --color-shiro-white: #F8F9FA;
+    /* Off-White/Paper */
+    --color-gin-silver: #D1D5DB;
+    /* Silver/Grey */
+    --color-dark-surface: #242424;
+    /* Lighter black for cards */
+}
+
+/* Base */
+body {
+    font-family: 'Noto Sans JP', 'Inter', sans-serif;
+    background-color: var(--color-sumi-black);
+    color: var(--color-shiro-white);
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Custom classes for Tailwind */
+.text-kurenai-red {
+    color: var(--color-kurenai-red);
+}
+
+.text-sumi-black {
+    color: var(--color-sumi-black);
+}
+
+.text-shiro-white {
+    color: var(--color-shiro-white);
+}
+
+.text-gin-silver {
+    color: var(--color-gin-silver);
+}
+
+.bg-sumi-black {
+    background-color: var(--color-sumi-black);
+}
+
+.bg-kurenai-red {
+    background-color: var(--color-kurenai-red);
+}
+
+.bg-shiro-white {
+    background-color: var(--color-shiro-white);
+}
+
+.bg-dark-surface {
+    background-color: var(--color-dark-surface);
+}
+
+.border-kurenai-red {
+    border-color: var(--color-kurenai-red);
+}
+
+/* Typography */
+.jp-subtitle {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    color: var(--color-kurenai-red);
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+/* Navbar Links */
+.nav-link {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: var(--color-shiro-white);
+    transition: all 0.3s ease;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--color-kurenai-red);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 80%;
+}
+
+.nav-link:hover {
+    color: var(--color-kurenai-red);
+}
+
+/* Glow & Hover Effects */
+.icon-glow {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.icon-glow:hover {
+    background-color: var(--color-kurenai-red);
+    color: var(--color-shiro-white) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(201, 31, 55, 0.4);
+    border-color: var(--color-kurenai-red);
+}
+
+/* Cards */
+.project-card {
+    background-color: var(--color-dark-surface);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--color-kurenai-red);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Specific section overrides */
+.clients-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.clients-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(201, 31, 55, 0.05) 0%, rgba(26, 26, 26, 0) 100%);
+    pointer-events: none;
+}
+
+/* Experience */
+.experience-card {
+    background-color: var(--color-dark-surface);
+    border-left: 4px solid var(--color-kurenai-red);
+    padding: 2rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+    background-color: #2A2A2A;
+}
+
+/* --- NEW FEATURES --- */
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-sumi-black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-kurenai-red);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a6172b;
+}
+
+/* Marquee Animation */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    background: var(--color-dark-surface);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0.75rem 0;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Scroll Reveal Classes */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Contact Form Input Styles */
+.form-input {
+    width: 100%;
+    background-color: var(--color-sumi-black);
+    color: var(--color-shiro-white);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--color-kurenai-red);
+    box-shadow: 0 0 10px rgba(201, 31, 55, 0.3);
+}
+
+/* ============================================
+   ABOUT ME — FLOATING ELEMENTS
+   ============================================ */
+.about-me-section {
+    position: relative;
+}
+
+.about-float-elements {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+/* Geometric Shapes */
+.float-shape {
+    position: absolute;
+    border: 1px solid rgba(201, 31, 55, 0.18);
+    border-radius: 4px;
+    opacity: 0.6;
+}
+
+.float-shape-1 {
+    width: 60px;
+    height: 60px;
+    top: 12%;
+    left: 5%;
+    transform: rotate(20deg);
+    animation: floatA 9s ease-in-out infinite;
+}
+
+.float-shape-2 {
+    width: 90px;
+    height: 90px;
+    bottom: 18%;
+    right: 6%;
+    border-radius: 50%;
+    border-color: rgba(201, 31, 55, 0.12);
+    animation: floatB 12s ease-in-out infinite;
+}
+
+.float-shape-3 {
+    width: 40px;
+    height: 40px;
+    top: 55%;
+    left: 2%;
+    transform: rotate(-30deg);
+    border-color: rgba(255, 255, 255, 0.07);
+    animation: floatA 14s ease-in-out infinite reverse;
+}
+
+.float-shape-4 {
+    width: 50px;
+    height: 50px;
+    top: 8%;
+    right: 10%;
+    transform: rotate(45deg);
+    border-color: rgba(201, 31, 55, 0.1);
+    animation: floatB 10s ease-in-out infinite;
+}
+
+/* Floating Dots */
+.float-dot {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(201, 31, 55, 0.35);
+}
+
+.float-dot-1 {
+    width: 5px;
+    height: 5px;
+    top: 25%;
+    left: 15%;
+    animation: floatA 7s ease-in-out infinite;
+}
+
+.float-dot-2 {
+    width: 3px;
+    height: 3px;
+    top: 70%;
+    left: 8%;
+    background: rgba(255, 255, 255, 0.2);
+    animation: floatB 11s ease-in-out infinite;
+}
+
+.float-dot-3 {
+    width: 6px;
+    height: 6px;
+    top: 40%;
+    right: 3%;
+    animation: floatA 8s ease-in-out infinite 1s;
+}
+
+.float-dot-4 {
+    width: 4px;
+    height: 4px;
+    bottom: 25%;
+    right: 15%;
+    background: rgba(255, 255, 255, 0.15);
+    animation: floatB 13s ease-in-out infinite 2s;
+}
+
+.float-dot-5 {
+    width: 5px;
+    height: 5px;
+    top: 80%;
+    left: 45%;
+    animation: floatA 9s ease-in-out infinite 0.5s;
+}
+
+/* Floating Rings */
+.float-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(201, 31, 55, 0.08);
+}
+
+.float-ring-1 {
+    width: 200px;
+    height: 200px;
+    top: -60px;
+    left: -60px;
+    animation: floatRing 18s linear infinite;
+}
+
+.float-ring-2 {
+    width: 140px;
+    height: 140px;
+    bottom: -40px;
+    right: -40px;
+    border-color: rgba(255, 255, 255, 0.05);
+    animation: floatRing 22s linear infinite reverse;
+}
+
+/* Keyframes */
+@keyframes floatA {
+    0%, 100% { transform: translateY(0px) rotate(20deg); }
+    50%       { transform: translateY(-18px) rotate(22deg); }
+}
+
+@keyframes floatB {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(14px); }
+}
+
+@keyframes floatRing {
+    0%   { transform: rotate(0deg) scale(1); }
+    50%  { transform: rotate(180deg) scale(1.04); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+/* ============================================
+   ABOUT ME — INFO CARDS ROW
+   ============================================ */
+.info-cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: flex-start;
+}
+
+/* ============================================
+   ABOUT ME — INFO CARDS (University & Location)
+   ============================================ */
+.about-info-card {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    width: fit-content;
+    background: rgba(36, 36, 36, 0.7);
+    border: 1px solid rgba(201, 31, 55, 0.2);
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 0.35s ease;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.about-info-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(201, 31, 55, 0.06) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    border-radius: inherit;
+}
+
+.about-info-card:hover::before {
+    opacity: 1;
+}
+
+.about-info-card:hover {
+    border-color: rgba(201, 31, 55, 0.5);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(201, 31, 55, 0.15);
+}
+
+.about-info-card-icon {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(201, 31, 55, 0.1);
+    border-radius: 0.5rem;
+    color: var(--color-kurenai-red);
+    transition: background 0.35s ease;
+}
+
+.about-info-card:hover .about-info-card-icon {
+    background: rgba(201, 31, 55, 0.22);
+}
+
+.about-info-card-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.about-info-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.about-info-card-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-kurenai-red);
+    opacity: 0.8;
+}
+
+.about-info-card-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--color-shiro-white);
+    line-height: 1.2;
+}
+
+.about-info-card-sub {
+    font-size: 0.72rem;
+    color: var(--color-gin-silver);
+    opacity: 0.7;
+    margin-top: 0.1rem;
+}
+
+/* ============================================
+   PHOTO ORBIT WRAPPER — Floating Badges Around Photo
+   ============================================ */
+.photo-orbit-wrapper {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 640px) {
+    .photo-orbit-wrapper {
+        width: 440px;
+        height: 440px;
+    }
+}
+
+/* Dashed orbit rings */
+.orbit-ring {
+    position: absolute;
+    inset: -24px;
+    border-radius: 50%;
+    border: 1px dashed rgba(201, 31, 55, 0.25);
+    animation: orbitSpin 28s linear infinite;
+    pointer-events: none;
+}
+
+.orbit-ring-2 {
+    inset: -44px;
+    border-color: rgba(255, 255, 255, 0.06);
+    animation-duration: 40s;
+    animation-direction: reverse;
+}
+
+@keyframes orbitSpin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+/* Photo frame */
+.photo-frame {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+}
+
+@media (min-width: 640px) {
+    .photo-frame {
+        width: 360px;
+        height: 360px;
+    }
+}
+
+.photo-frame-border {
+    position: absolute;
+    inset: 0;
+    border: 2px solid var(--color-kurenai-red);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(201, 31, 55, 0.4), inset 0 0 20px rgba(201, 31, 55, 0.08);
+    z-index: 3;
+    pointer-events: none;
+}
+
+.photo-frame-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--color-dark-surface);
+    border: 4px solid #1a1a1a;
+    position: relative;
+    z-index: 2;
+}
+
+.photo-frame-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+}
+
+/* ---- Orbit Badges ---- */
+.orbit-badge {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(26, 26, 26, 0.85);
+    border: 1px solid rgba(201, 31, 55, 0.35);
+    border-radius: 999px;
+    padding: 0.4rem 0.85rem 0.4rem 0.5rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--color-shiro-white);
+    letter-spacing: 0.05em;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    white-space: nowrap;
+    z-index: 10;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.orbit-badge:hover {
+    transform: scale(1.08) !important;
+    box-shadow: 0 6px 24px rgba(201, 31, 55, 0.3);
+}
+
+.orbit-badge-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: rgba(201, 31, 55, 0.15);
+    border-radius: 50%;
+    color: var(--color-kurenai-red);
+    flex-shrink: 0;
+}
+
+.orbit-badge-icon svg {
+    width: 13px;
+    height: 13px;
+}
+
+/* Badge positions */
+.orbit-badge-tl {
+    top: 10%;
+    left: -20px;
+}
+
+.orbit-badge-tr {
+    top: 15%;
+    right: -30px;
+}
+
+.orbit-badge-bl {
+    bottom: 22%;
+    left: -25px;
+}
+
+.orbit-badge-br {
+    bottom: 10%;
+    right: -30px;
+}
+
+/* Status badge at bottom */
+.orbit-status-badge {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    background: rgba(26, 26, 26, 0.9);
+    border: 1px solid rgba(201, 31, 55, 0.3);
+    border-radius: 999px;
+    padding: 0.35rem 1rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--color-shiro-white);
+    letter-spacing: 0.05em;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    white-space: nowrap;
+    z-index: 10;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 6px #22c55e;
+    animation: statusPulse 2s ease-in-out infinite;
+    flex-shrink: 0;
+}
+
+@keyframes statusPulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 6px #22c55e; }
+    50%       { opacity: 0.6; box-shadow: 0 0 12px #22c55e; }
+}
+
+/* Float animations for badges */
+.float-badge-1 { animation: badgeFloat1 6s ease-in-out infinite; }
+.float-badge-2 { animation: badgeFloat2 7s ease-in-out infinite 0.5s; }
+.float-badge-3 { animation: badgeFloat3 8s ease-in-out infinite 1s; }
+.float-badge-4 { animation: badgeFloat1 6.5s ease-in-out infinite 1.5s; }
+.float-badge-5 { animation: badgeFloat2 5s ease-in-out infinite 0.3s; }
+
+@keyframes badgeFloat1 {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(-8px); }
+}
+
+@keyframes badgeFloat2 {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(7px); }
+}
+
+@keyframes badgeFloat3 {
+    0%, 100% { transform: translateY(0px) translateX(0px); }
+    50%       { transform: translateY(-6px) translateX(3px); }
+}
+
+/* ============================================
+   HERO / OPENING — Typography
+   ============================================ */
+.hero-greeting {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-gin-silver);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    opacity: 0.7;
+}
+
+.hero-name {
+    font-size: clamp(2.4rem, 6vw, 4.5rem);
+    font-weight: 900;
+    line-height: 1.05;
+    color: var(--color-shiro-white);
+    letter-spacing: -0.02em;
+    margin-bottom: 1.25rem;
+}
+
+.hero-role-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.75rem;
+    justify-content: flex-start;
+}
+
+@media (max-width: 767px) {
+    .hero-role-wrap { justify-content: center; }
+}
+
+.hero-role-line {
+    display: inline-block;
+    width: 36px;
+    height: 2px;
+    background: var(--color-kurenai-red);
+    flex-shrink: 0;
+}
+
+.hero-role {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-kurenai-red);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* Passion Block */
+.hero-passion-block {
+    background: rgba(36, 36, 36, 0.6);
+    border: 1px solid rgba(201, 31, 55, 0.2);
+    border-left: 3px solid var(--color-kurenai-red);
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 1.1rem 1.25rem;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    max-width: 540px;
+}
+
+@media (max-width: 767px) {
+    .hero-passion-block { max-width: 100%; margin: 0 auto; }
+}
+
+.hero-passion-label {
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-kurenai-red);
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.hero-passion-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--color-shiro-white);
+    margin-bottom: 0.5rem;
+}
+
+.hero-passion-desc {
+    font-size: 0.85rem;
+    color: var(--color-gin-silver);
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+/* ============================================
+   ABOUT ME (New) — Bio Status Badge
+   ============================================ */
+.bio-status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(201, 31, 55, 0.08);
+    border: 1px solid rgba(201, 31, 55, 0.25);
+    border-radius: 999px;
+    padding: 0.35rem 1rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-kurenai-red);
+}
+
+.bio-status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-kurenai-red);
+    box-shadow: 0 0 6px var(--color-kurenai-red);
+    animation: statusPulse 2s ease-in-out infinite;
+    flex-shrink: 0;
+}
+
+/* ============================================
+   ABOUT ME (New) — Skill Cards Grid
+   ============================================ */
+.skill-cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.skill-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(36, 36, 36, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 0.6rem;
+    padding: 0.85rem 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--color-kurenai-red);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 4px 0 0 4px;
+}
+
+.skill-card:hover::before {
+    opacity: 1;
+}
+
+.skill-card:hover {
+    border-color: rgba(201, 31, 55, 0.3);
+    background: rgba(44, 44, 44, 0.8);
+    transform: translateX(4px);
+}
+
+.skill-card-icon {
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(201, 31, 55, 0.08);
+    border-radius: 0.4rem;
+    color: var(--color-kurenai-red);
+    transition: background 0.3s ease;
+}
+
+.skill-card:hover .skill-card-icon {
+    background: rgba(201, 31, 55, 0.18);
+}
+
+.skill-card-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.skill-card-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.skill-card-name {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--color-shiro-white);
+    line-height: 1.2;
+}
+
+.skill-card-level {
+    font-size: 0.7rem;
+    color: var(--color-gin-silver);
+    opacity: 0.6;
+    margin-top: 0.15rem;
+}
+
+/* Skill level badges */
+.skill-card-badge {
+    flex-shrink: 0;
+    font-size: 0.6rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    background: rgba(201, 31, 55, 0.15);
+    color: var(--color-kurenai-red);
+    border: 1px solid rgba(201, 31, 55, 0.3);
+}
+
+.skill-badge-mid {
+    background: rgba(234, 179, 8, 0.1);
+    color: #eab308;
+    border-color: rgba(234, 179, 8, 0.3);
+}
+
+.skill-badge-basic {
+    background: rgba(100, 116, 139, 0.15);
+    color: #94a3b8;
+    border-color: rgba(100, 116, 139, 0.3);
+}
+
+/* ============================================
+   ABOUT ME — Highlight Items (Checkmarks)
+   ============================================ */
+.about-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.about-highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(36, 36, 36, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-shiro-white);
+    transition: all 0.3s ease;
+}
+
+.about-highlight-item:hover {
+    border-color: rgba(201, 31, 55, 0.25);
+    background: rgba(44, 44, 44, 0.8);
+    transform: translateX(4px);
+}
+
+.highlight-check {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(201, 31, 55, 0.12);
+    border-radius: 50%;
+    color: var(--color-kurenai-red);
+    transition: background 0.3s ease;
+}
+
+.about-highlight-item:hover .highlight-check {
+    background: rgba(201, 31, 55, 0.22);
+}
+
+.highlight-check svg {
+    width: 15px;
+    height: 15px;
+}
+
+/* ============================================
+   ABOUT ME — Stats Cards Row
+   ============================================ */
+.about-stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+@media (max-width: 480px) {
+    .about-stats-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.about-stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    background: rgba(36, 36, 36, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-stat-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-kurenai-red), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.about-stat-card:hover::before {
+    opacity: 1;
+}
+
+.about-stat-card:hover {
+    border-color: rgba(201, 31, 55, 0.2);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.about-stat-icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-kurenai-red);
+    margin-bottom: 0.25rem;
+}
+
+.about-stat-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.about-stat-number {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--color-shiro-white);
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+.about-stat-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-gin-silver);
+    opacity: 0.6;
+}
+
+/* ============================================
+   TOOLS & SKILLS SECTION
+   ============================================ */
+.skills-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    .skills-two-col {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Skills Card */
+.skills-card {
+    background: rgba(36, 36, 36, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 1.25rem;
+    padding: 1.75rem;
+    transition: border-color 0.3s ease;
+}
+
+.skills-card:hover {
+    border-color: rgba(201, 31, 55, 0.2);
+}
+
+/* Card Header */
+.skills-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.skills-card-header-icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(201, 31, 55, 0.1);
+    border-radius: 0.6rem;
+    color: var(--color-kurenai-red);
+}
+
+.skills-card-header-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.skills-card-title {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--color-shiro-white);
+    line-height: 1.2;
+}
+
+.skills-card-subtitle {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-gin-silver);
+    opacity: 0.5;
+    margin-top: 0.15rem;
+}
+
+/* Skills List */
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Skill Item */
+.skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.65rem 0.85rem;
+    border-radius: 0.6rem;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    background: rgba(26, 26, 26, 0.5);
+    transition: all 0.25s ease;
+}
+
+.skill-item:hover {
+    background: rgba(44, 44, 44, 0.7);
+    border-color: rgba(201, 31, 55, 0.2);
+    transform: translateX(3px);
+}
+
+.skill-item-left {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    min-width: 0;
+}
+
+/* Tech icon */
+.skill-item-icon {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(201, 31, 55, 0.08);
+    border-radius: 0.4rem;
+    color: var(--color-kurenai-red);
+    transition: background 0.25s ease;
+}
+
+.skill-item:hover .skill-item-icon {
+    background: rgba(201, 31, 55, 0.18);
+}
+
+.skill-item-icon svg {
+    width: 15px;
+    height: 15px;
+}
+
+/* Soft check icon */
+.skill-item-check {
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(201, 31, 55, 0.1);
+    border-radius: 50%;
+    color: var(--color-kurenai-red);
+    transition: background 0.25s ease;
+}
+
+.skill-item:hover .skill-item-check {
+    background: rgba(201, 31, 55, 0.22);
+}
+
+.skill-item-check svg {
+    width: 12px;
+    height: 12px;
+}
+
+.skill-item-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-shiro-white);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Tech Level Pills */
+.skill-pill {
+    flex-shrink: 0;
+    font-size: 0.58rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    border: 1px solid;
+}
+
+.skill-pill-adv {
+    background: rgba(201, 31, 55, 0.12);
+    color: var(--color-kurenai-red);
+    border-color: rgba(201, 31, 55, 0.3);
+}
+
+.skill-pill-mid {
+    background: rgba(234, 179, 8, 0.1);
+    color: #eab308;
+    border-color: rgba(234, 179, 8, 0.3);
+}
+
+.skill-pill-basic {
+    background: rgba(100, 116, 139, 0.12);
+    color: #94a3b8;
+    border-color: rgba(100, 116, 139, 0.25);
+}
+
+/* Soft Skill Tag */
+.skill-soft-tag {
+    flex-shrink: 0;
+    font-size: 0.58rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--color-gin-silver);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.skill-item-soft:hover .skill-soft-tag {
+    background: rgba(201, 31, 55, 0.08);
+    color: var(--color-kurenai-red);
+    border-color: rgba(201, 31, 55, 0.2);
+}
+
+/* ============================================
+   FLOATING ACTION BUTTONS
+   ============================================ */
+.floating-buttons {
+    position: fixed;
+    bottom: 2rem;
+    right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    z-index: 9999;
+}
+
+.fab-btn {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(30, 30, 30, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: var(--color-shiro-white);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.fab-btn svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.fab-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(201, 31, 55, 0.35);
+    border-color: rgba(201, 31, 55, 0.5);
+    background: rgba(201, 31, 55, 0.15);
+    color: var(--color-kurenai-red);
+}
+
+.fab-btn:hover svg {
+    transform: scale(1.15);
+}
+
+/* Back to Top — hidden by default, slides in on scroll */
+.fab-btt {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(16px) scale(0.85);
+    transition: opacity 0.35s ease, transform 0.35s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.fab-btt.btt-visible {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0) scale(1);
+}
+
+/* Tooltip */
+.fab-tooltip {
+    position: absolute;
+    right: calc(100% + 10px);
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(20, 20, 20, 0.92);
+    border: 1px solid rgba(255,255,255,0.08);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.fab-tooltip::after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 5px solid transparent;
+    border-left-color: rgba(20,20,20,0.92);
+}
+
+.fab-btn:hover .fab-tooltip {
+    opacity: 1;
+}
+
+/* ============================================
+   SAKURA LIGHT MODE
+   ============================================ */
+body.light-mode {
+    --color-sumi-black:   #FDF0F3;
+    --color-dark-surface: #FAE3EA;
+    --color-kurenai-red:  #C2185B;
+    --color-shiro-white:  #1a1a2e;
+    --color-gin-silver:   #4a3d50;
+    background-color: #FDF0F3;
+    color: #1a1a2e;
+    transition: background-color 0.5s ease, color 0.4s ease;
+}
+
+/* Header */
+body.light-mode header {
+    background: rgba(253, 240, 243, 0.9);
+    border-color: rgba(194, 24, 91, 0.15);
+}
+
+body.light-mode .nav-link {
+    color: #4a3d50;
+}
+
+body.light-mode .nav-link:hover,
+body.light-mode .nav-link.active {
+    color: #C2185B;
+}
+
+/* Sections backgrounds */
+body.light-mode #about-detail,
+body.light-mode #skills,
+body.light-mode #projects,
+body.light-mode #clients,
+body.light-mode #social {
+    background: #FDF0F3 !important;
+}
+
+body.light-mode .about-me-section {
+    /* Hero section: keep dark so photo stays visible */
+    background: #f8e6ec !important;
+}
+
+body.light-mode .bg-sumi-black {
+    background-color: #F5E0E8 !important;
+}
+
+/* Cards & Surfaces */
+body.light-mode .skills-card,
+body.light-mode .about-info-card,
+body.light-mode .about-stat-card,
+body.light-mode .about-highlight-item,
+body.light-mode .skill-item,
+body.light-mode .hero-passion-block,
+body.light-mode .project-card {
+    background: rgba(255, 255, 255, 0.8) !important;
+    border-color: rgba(194, 24, 91, 0.15) !important;
+}
+
+body.light-mode .skill-item:hover,
+body.light-mode .about-highlight-item:hover {
+    background: rgba(255, 235, 242, 0.95) !important;
+}
+
+/* Text colors */
+body.light-mode .text-shiro-white,
+body.light-mode .skills-card-title,
+body.light-mode .about-stat-number,
+body.light-mode .skill-item-name,
+body.light-mode .skill-card-name,
+body.light-mode .hero-name,
+body.light-mode .tech-tag {
+    color: #1a1a2e !important;
+}
+
+body.light-mode .tech-tag {
+    background: rgba(194, 24, 91, 0.1) !important;
+    border-color: rgba(194, 24, 91, 0.3) !important;
+    color: #C2185B !important;
+}
+
+body.light-mode .text-gin-silver,
+body.light-mode .skills-card-subtitle,
+body.light-mode .about-stat-label,
+body.light-mode .skill-card-level,
+body.light-mode .hero-passion-desc {
+    color: #6b5b75 !important;
+    opacity: 1 !important;
+}
+
+body.light-mode .text-kurenai-red,
+body.light-mode .hero-role,
+body.light-mode .jp-subtitle,
+body.light-mode .skills-card-header-icon,
+body.light-mode .skill-item-icon,
+body.light-mode .skill-item-check,
+body.light-mode .highlight-check,
+body.light-mode .about-stat-icon {
+    color: #C2185B !important;
+}
+
+/* Accent / pill backgrounds */
+body.light-mode .skill-item-icon,
+body.light-mode .skills-card-header-icon {
+    background: rgba(194, 24, 91, 0.1) !important;
+}
+
+body.light-mode .skill-pill-adv {
+    background: rgba(194, 24, 91, 0.1) !important;
+    color: #C2185B !important;
+    border-color: rgba(194, 24, 91, 0.3) !important;
+}
+
+body.light-mode .highlight-check,
+body.light-mode .skill-item-check {
+    background: rgba(194, 24, 91, 0.1) !important;
+}
+
+body.light-mode .bio-status-badge {
+    background: rgba(194, 24, 91, 0.08) !important;
+    border-color: rgba(194, 24, 91, 0.2) !important;
+    color: #C2185B !important;
+}
+
+/* Floating backgrounds (shapes) */
+body.light-mode .float-shape {
+    background: rgba(194, 24, 91, 0.06) !important;
+}
+
+body.light-mode .float-ring {
+    border-color: rgba(194, 24, 91, 0.08) !important;
+}
+
+/* Orbit */
+body.light-mode .orbit-ring {
+    border-color: rgba(194, 24, 91, 0.15) !important;
+}
+
+/* Photo frame border — use border color, NOT background (would fill entire circle) */
+body.light-mode .photo-frame-border {
+    border-color: #C2185B !important;
+    box-shadow: 0 0 20px rgba(194, 24, 91, 0.35), inset 0 0 20px rgba(194, 24, 91, 0.08) !important;
+}
+
+/* Photo frame inner border — match light background */
+body.light-mode .photo-frame-inner {
+    background: #f8e6ec !important;
+    border-color: #f8e6ec !important;
+}
+
+/* Photo — remove grayscale filter in light mode */
+body.light-mode .photo-frame img,
+body.light-mode .photo-frame-inner img {
+    filter: none !important;
+    -webkit-filter: none !important;
+}
+
+/* Orbit badges */
+body.light-mode .orbit-badge {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border-color: rgba(194, 24, 91, 0.2) !important;
+    color: #C2185B !important;
+}
+
+/* Status badge */
+body.light-mode .orbit-status-badge {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border-color: rgba(194, 24, 91, 0.2) !important;
+    color: #C2185B !important;
+}
+
+/* Footer */
+body.light-mode footer {
+    background: #F5E0E8 !important;
+    border-color: rgba(194, 24, 91, 0.1) !important;
+}
+
+/* Marquee */
+body.light-mode .marquee-container {
+    background: rgba(194, 24, 91, 0.08) !important;
+    border-color: rgba(194, 24, 91, 0.2) !important;
+}
+
+/* FAB buttons in light mode */
+body.light-mode .fab-btn {
+    background: rgba(255, 255, 255, 0.85);
+    border-color: rgba(194, 24, 91, 0.2);
+    color: #C2185B;
+    box-shadow: 0 4px 20px rgba(194, 24, 91, 0.15);
+}
+
+body.light-mode .fab-btn:hover {
+    background: rgba(194, 24, 91, 0.1);
+    border-color: rgba(194, 24, 91, 0.4);
+    box-shadow: 0 8px 28px rgba(194, 24, 91, 0.25);
+}
+
+body.light-mode .fab-tooltip {
+    background: rgba(255, 255, 255, 0.95);
+    border-color: rgba(194, 24, 91, 0.15);
+    color: #C2185B;
+}
+
+body.light-mode .fab-tooltip::after {
+    border-left-color: rgba(255, 255, 255, 0.95);
+}
+
+/* ============================================
+   1. SCROLL PROGRESS BAR
+   ============================================ */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(90deg, var(--color-kurenai-red), #ff6b6b, var(--color-kurenai-red));
+    background-size: 200% auto;
+    animation: progressShimmer 2s linear infinite;
+    z-index: 10000;
+    border-radius: 0 2px 2px 0;
+    box-shadow: 0 0 8px rgba(201, 31, 55, 0.6);
+    transition: width 0.1s linear;
+}
+
+@keyframes progressShimmer {
+    0%   { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+body.light-mode #scroll-progress {
+    background: linear-gradient(90deg, #C2185B, #f48fb1, #C2185B);
+    background-size: 200% auto;
+    animation: progressShimmer 2s linear infinite;
+    box-shadow: 0 0 8px rgba(194, 24, 91, 0.5);
+}
+
+/* ============================================
+   2. ACTIVE NAV LINK
+   ============================================ */
+.nav-link.active {
+    color: var(--color-kurenai-red) !important;
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--color-kurenai-red);
+    border-radius: 2px;
+    animation: navUnderlineIn 0.3s ease forwards;
+}
+
+@keyframes navUnderlineIn {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+}
+
+/* ============================================
+   3. TYPEWRITER CURSOR BLINK
+   ============================================ */
+#hero-typewriter {
+    animation: cursorBlink 0.8s step-end infinite;
+}
+
+@keyframes cursorBlink {
+    0%, 100% { border-right-color: currentColor; }
+    50%       { border-right-color: transparent; }
+}
+
+/* ============================================
+   4. MOUSE GLOW EFFECT
+   ============================================ */
+#mouse-glow {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201, 31, 55, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4s ease;
+    opacity: 0;
+    z-index: 0;
+    will-change: left, top;
+}
+
+body.light-mode #mouse-glow {
+    background: radial-gradient(circle, rgba(194, 24, 91, 0.06) 0%, transparent 70%);
+}
+
+/* ============================================
+   5. ENHANCED REVEAL ANIMATION
+   ============================================ */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ============================================
+   6. CUSTOM CURSOR
+   ============================================ */
+@media (pointer: fine) {
+    /* Hide default cursor globally */
+    body, a, button, .nav-link, .fab-btn, .project-card, .skills-card, .experience-card {
+        cursor: none !important;
+    }
+
+    /* Inner Dot */
+    #cursor-dot {
+        position: fixed;
+        width: 8px;
+        height: 8px;
+        background: var(--color-kurenai-red);
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        z-index: 10001;
+        transition: width 0.2s, height 0.2s, background 0.2s;
+    }
+
+    /* Outer Ring */
+    #cursor-ring {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        border: 2px solid rgba(201, 31, 55, 0.4);
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        z-index: 10000;
+        /* Width/height transition for hover, NO transform transition to keep follow smooth */
+        transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+    }
+
+    /* Cursor Hover States on Links/Buttons */
+    body.cursor-hover #cursor-dot {
+        background: transparent;
+    }
+    
+    body.cursor-hover #cursor-ring {
+        width: 65px;
+        height: 65px;
+        background: rgba(201, 31, 55, 0.1);
+        border-color: rgba(201, 31, 55, 0.6);
+        backdrop-filter: blur(2px);
+    }
+    
+    /* Light mode custom cursor colors */
+    body.light-mode #cursor-dot { 
+        background: #C2185B; 
+    }
+    
+    body.light-mode #cursor-ring { 
+        border-color: rgba(194, 24, 91, 0.4); 
+    }
+    
+    body.light-mode.cursor-hover #cursor-dot { 
+        background: transparent; 
+    }
+    
+    body.light-mode.cursor-hover #cursor-ring {
+        background: rgba(194, 24, 91, 0.1);
+        border-color: rgba(194, 24, 91, 0.6);
+    }
+}
+
+/* ============================================
+   7. 3D CARD TILT BASE STYLES
+   ============================================ */
+/* Ensure cards have perspective set up via JS and default transform transition */
+.project-card, .skills-card, .experience-card {
+    will-change: transform;
+    transform-style: preserve-3d;
+}
+
+/* ============================================
+   8. GLITCH HOVER EFFECT
+   ============================================ */
+.glitch-hover {
+    position: relative;
+    display: inline-block;
+}
+
+.glitch-hover::before,
+.glitch-hover::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.glitch-hover::before {
+    left: 2px;
+    text-shadow: -2px 0 var(--color-kurenai-red);
+    clip: rect(24px, 550px, 90px, 0);
+}
+
+.glitch-hover::after {
+    left: -2px;
+    text-shadow: -2px 0 #0ff;
+    clip: rect(85px, 550px, 140px, 0);
+}
+
+.glitch-hover:hover::before {
+    animation: glitch-anim 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    opacity: 1;
+}
+
+.glitch-hover:hover::after {
+    animation: glitch-anim-2 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    opacity: 1;
+}
+
+@keyframes glitch-anim {
+    0% { clip: rect(38px, 9999px, 86px, 0); transform: translate(-2px, 2px); }
+    20% { clip: rect(10px, 9999px, 83px, 0); transform: translate(2px, -2px); }
+    40% { clip: rect(97px, 9999px, 2px, 0); transform: translate(-2px, 2px); }
+    60% { clip: rect(51px, 9999px, 73px, 0); transform: translate(2px, -2px); }
+    80% { clip: rect(8px, 9999px, 18px, 0); transform: translate(-2px, 2px); }
+    100% { clip: rect(72px, 9999px, 35px, 0); transform: translate(2px, -2px); }
+}
+
+@keyframes glitch-anim-2 {
+    0% { clip: rect(65px, 9999px, 100px, 0); transform: translate(2px, -2px); }
+    20% { clip: rect(32px, 9999px, 5px, 0); transform: translate(-2px, 2px); }
+    40% { clip: rect(15px, 9999px, 49px, 0); transform: translate(2px, -2px); }
+    60% { clip: rect(87px, 9999px, 22px, 0); transform: translate(-2px, 2px); }
+    80% { clip: rect(4px, 9999px, 81px, 0); transform: translate(2px, -2px); }
+    100% { clip: rect(55px, 9999px, 12px, 0); transform: translate(-2px, 2px); }
+}
