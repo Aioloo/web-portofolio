@@ -748,6 +748,8 @@ html {
     color: var(--color-kurenai-red);
     letter-spacing: 0.08em;
     text-transform: uppercase;
+    min-height: 1.6em; /* Prevent layout shift when text is empty between role transitions */
+    display: inline-block;
 }
 
 /* Passion Block */

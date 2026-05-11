@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <!-- Google Fonts: Inter and Noto Sans JP -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;700;900&display=swap"
+        rel="stylesheet">
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -32,6 +35,7 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="text-shiro-white bg-sumi-black antialiased selection:bg-kurenai-red selection:text-white">
 
     <!-- Scroll Progress Bar -->
@@ -44,7 +48,8 @@
     <div id="cursor-dot"></div>
     <div id="cursor-ring"></div>
     <!-- Header Section -->
-    <header class="w-full py-6 px-4 sm:px-8 md:px-12 bg-sumi-black/90 backdrop-blur-md border-b border-white/10 sticky top-0 z-50">
+    <header
+        class="w-full py-6 px-4 sm:px-8 md:px-12 bg-sumi-black/90 backdrop-blur-md border-b border-white/10 sticky top-0 z-50">
         <nav class="container mx-auto flex justify-between items-center">
             <div class="flex flex-col">
                 <h1 class="text-2xl font-bold tracking-tight text-shiro-white uppercase">PortoFolio</h1>
@@ -60,7 +65,11 @@
             <!-- Mobile Menu Button (dummy) -->
             <div class="md:hidden">
                 <button class="text-shiro-white hover:text-kurenai-red transition-colors">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
                 </button>
             </div>
         </nav>
@@ -70,7 +79,9 @@
         <!-- ============================
              HERO / OPENING SECTION
              ============================ -->
-        <section id="about-me" class="pt-16 pb-24 px-4 sm:px-8 md:px-12 relative border-b border-white/5 about-me-section" style="overflow:hidden;">
+        <section id="about-me"
+            class="pt-16 pb-24 px-4 sm:px-8 md:px-12 relative border-b border-white/5 about-me-section"
+            style="overflow:hidden;">
 
             <!-- Floating Background Elements -->
             <div class="about-float-elements" aria-hidden="true">
@@ -90,11 +101,15 @@
             <!-- Marquee -->
             <div class="marquee-container mb-16 transform -rotate-1 shadow-lg" style="position:relative;z-index:2;">
                 <div class="marquee-content text-kurenai-red font-jp font-bold tracking-widest text-sm uppercase">
-                    &nbsp;&nbsp;&nbsp;INFORMATICS ENGINEERING // FRONTEND DEVELOPER // UI/UX ENTHUSIAST // SOFTWARE ENGINEER // TECH VISIONARY // CREATIVE CODER // WEB PERFORMANCE SPECIALIST // SYSTEM ANALYST // INFORMATICS ENGINEERING // FRONTEND DEVELOPER // UI/UX ENTHUSIAST // SOFTWARE ENGINEER // TECH VISIONARY // CREATIVE CODER // WEB PERFORMANCE SPECIALIST // SYSTEM ANALYST //
+                    &nbsp;&nbsp;&nbsp;INFORMATICS ENGINEERING // FRONTEND DEVELOPER // UI/UX ENTHUSIAST // SOFTWARE
+                    ENGINEER // TECH VISIONARY // CREATIVE CODER // WEB PERFORMANCE SPECIALIST // SYSTEM ANALYST //
+                    INFORMATICS ENGINEERING // FRONTEND DEVELOPER // UI/UX ENTHUSIAST // SOFTWARE ENGINEER // TECH
+                    VISIONARY // CREATIVE CODER // WEB PERFORMANCE SPECIALIST // SYSTEM ANALYST //
                 </div>
             </div>
 
-            <div class="container mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-20" style="position:relative;z-index:2;">
+            <div class="container mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-20"
+                style="position:relative;z-index:2;">
 
                 <!-- LEFT: Text Content -->
                 <div class="flex-1 text-center md:text-left">
@@ -103,7 +118,8 @@
                     <p class="hero-greeting">Hello, I am</p>
 
                     <!-- Name (with glitch effect class) -->
-                    <h1 class="hero-name glitch-hover" data-text="Ingmareza Nistyo Athallah">Ingmareza<br>Nistyo Athallah</h1>
+                    <h1 class="hero-name glitch-hover" data-text="Ingmareza Nistyo Athallah">Ingmareza<br>Nistyo
+                        Athallah</h1>
 
                     <!-- Role -->
                     <div class="hero-role-wrap">
@@ -116,7 +132,9 @@
                         <span class="hero-passion-label">⚡ Passion</span>
                         <p class="hero-passion-title">Software Engineer</p>
                         <p class="hero-passion-desc">
-                            I have a deep passion for crafting digital products — from writing clean, efficient code to building systems that are both functional and visually compelling. I thrive on solving complex problems through elegant software solutions.
+                            I have a deep passion for crafting digital products — from writing clean, efficient code to
+                            building systems that are both functional and visually compelling. I thrive on solving
+                            complex problems through elegant software solutions.
                         </p>
                     </div>
 
@@ -125,9 +143,11 @@
                         <!-- University Card -->
                         <div class="about-info-card" id="card-university">
                             <div class="about-info-card-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-                                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5" />
                                 </svg>
                             </div>
                             <div class="about-info-card-body">
@@ -139,9 +159,11 @@
                         <!-- Location Card -->
                         <div class="about-info-card" id="card-location">
                             <div class="about-info-card-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-                                    <circle cx="12" cy="9" r="2.5"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                                    <circle cx="12" cy="9" r="2.5" />
                                 </svg>
                             </div>
                             <div class="about-info-card-body">
@@ -163,32 +185,45 @@
                     <div class="photo-frame group">
                         <div class="photo-frame-border"></div>
                         <div class="photo-frame-inner">
-                            <img src="images/profilku.png" alt="Profile Picture" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                            <img src="images/profilku.png" alt="Profile Picture"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
                         </div>
                     </div>
 
                     <!-- Floating Badges -->
                     <div class="orbit-badge orbit-badge-tl float-badge-1">
                         <span class="orbit-badge-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
                         </span>
                         <span>HTML/CSS</span>
                     </div>
                     <div class="orbit-badge orbit-badge-tr float-badge-2">
                         <span class="orbit-badge-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                            </svg>
                         </span>
                         <span>JavaScript</span>
                     </div>
                     <div class="orbit-badge orbit-badge-bl float-badge-3">
                         <span class="orbit-badge-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                            </svg>
                         </span>
                         <span>MySQL</span>
                     </div>
                     <div class="orbit-badge orbit-badge-br float-badge-4">
                         <span class="orbit-badge-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" />
+                                <path d="M8 21h8M12 17v4" />
+                            </svg>
                         </span>
                         <span>Figma</span>
                     </div>
@@ -206,7 +241,8 @@
         <!-- ============================
              ABOUT ME SECTION
              ============================ -->
-        <section id="about-detail" class="py-24 px-4 sm:px-8 md:px-12 relative border-b border-white/5 reveal" style="background: linear-gradient(180deg, #1a1a1a 0%, #1f1f1f 100%);">
+        <section id="about-detail" class="py-24 px-4 sm:px-8 md:px-12 relative border-b border-white/5 reveal"
+            style="background: linear-gradient(180deg, #1a1a1a 0%, #1f1f1f 100%);">
             <div class="container mx-auto max-w-3xl">
 
                 <!-- Section Header -->
@@ -223,10 +259,14 @@
                         <span>Semester 6 &mdash; Active Student</span>
                     </div>
                     <p class="text-gin-silver text-base leading-relaxed mb-5">
-                        Saya adalah mahasiswa Teknik Informatika semester 6 di Universitas Negeri Surabaya, berdomisili di Surabaya. Saya memiliki ketertarikan mendalam dalam pengembangan perangkat lunak — mulai dari membangun antarmuka web yang responsif hingga merancang sistem backend yang efisien dan skalabel.
+                        I'm a 6th-semester Informatics Engineering student at Surabaya State University, residing in
+                        Surabaya. I have a deep interest in software development—from building responsive web interfaces
+                        to designing efficient and scalable backend systems.
                     </p>
                     <p class="text-gin-silver text-base leading-relaxed">
-                        Aktif terlibat dalam proyek nyata sejak semester awal, dengan pengalaman magang di PT PAL Indonesia (Persero) dan IDEAL Indonesia. Saya percaya pada clean code, kolaborasi tim, dan solusi digital yang memberikan dampak nyata bagi pengguna.
+                        Actively involved in real projects since the early semesters, with internship experience at PT
+                        PAL Indonesia (Persero) and IDEAL Indonesia. I believe in clean code, team collaboration, and
+                        digital solutions that deliver real impact to users.
                     </p>
                 </div>
 
@@ -234,19 +274,28 @@
                 <div class="about-highlights mb-12">
                     <div class="about-highlight-item">
                         <span class="highlight-check">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
                         </span>
                         <span>Strong problem-solving &amp; analytical thinking skills</span>
                     </div>
                     <div class="about-highlight-item">
                         <span class="highlight-check">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
                         </span>
                         <span>Experience in real-world software development projects</span>
                     </div>
                     <div class="about-highlight-item">
                         <span class="highlight-check">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
                         </span>
                         <span>Team collaboration, adaptable &amp; fast learner</span>
                     </div>
@@ -256,8 +305,10 @@
                 <div class="about-stats-row">
                     <div class="about-stat-card">
                         <div class="about-stat-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
                             </svg>
                         </div>
                         <p class="about-stat-number">5+</p>
@@ -265,8 +316,10 @@
                     </div>
                     <div class="about-stat-card">
                         <div class="about-stat-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="7" width="20" height="14" rx="2" />
+                                <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
                             </svg>
                         </div>
                         <p class="about-stat-number">2</p>
@@ -274,8 +327,11 @@
                     </div>
                     <div class="about-stat-card">
                         <div class="about-stat-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                <path d="M2 17l10 5 10-5" />
+                                <path d="M2 12l10 5 10-5" />
                             </svg>
                         </div>
                         <p class="about-stat-number">6th</p>
@@ -290,7 +346,8 @@
         <!-- ============================
              TOOLS & SKILLS SECTION
              ============================ -->
-        <section id="skills" class="py-24 px-4 sm:px-8 md:px-12 relative border-b border-white/5 reveal" style="background: #1a1a1a;">
+        <section id="skills" class="py-24 px-4 sm:px-8 md:px-12 relative border-b border-white/5 reveal"
+            style="background: #1a1a1a;">
             <div class="container mx-auto">
 
                 <!-- Section Header -->
@@ -307,8 +364,10 @@
                     <div class="skills-card">
                         <div class="skills-card-header">
                             <div class="skills-card-header-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
                                 </svg>
                             </div>
                             <div>
@@ -321,7 +380,10 @@
                             <div class="skill-item">
                                 <div class="skill-item-left">
                                     <div class="skill-item-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                            <polyline points="16 18 22 12 16 6" />
+                                            <polyline points="8 6 2 12 8 18" />
+                                        </svg>
                                     </div>
                                     <span class="skill-item-name">HTML / CSS</span>
                                 </div>
@@ -331,7 +393,9 @@
                             <div class="skill-item">
                                 <div class="skill-item-left">
                                     <div class="skill-item-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                                        </svg>
                                     </div>
                                     <span class="skill-item-name">JavaScript</span>
                                 </div>
@@ -341,7 +405,11 @@
                             <div class="skill-item">
                                 <div class="skill-item-left">
                                     <div class="skill-item-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                            <circle cx="12" cy="12" r="10" />
+                                            <path
+                                                d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                                        </svg>
                                     </div>
                                     <span class="skill-item-name">React.js</span>
                                 </div>
@@ -351,7 +419,11 @@
                             <div class="skill-item">
                                 <div class="skill-item-left">
                                     <div class="skill-item-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                            <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                                        </svg>
                                     </div>
                                     <span class="skill-item-name">MySQL</span>
                                 </div>
@@ -361,7 +433,10 @@
                             <div class="skill-item">
                                 <div class="skill-item-left">
                                     <div class="skill-item-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                                            <path d="M8 21h8M12 17v4" />
+                                        </svg>
                                     </div>
                                     <span class="skill-item-name">Figma</span>
                                 </div>
@@ -371,7 +446,10 @@
                             <div class="skill-item">
                                 <div class="skill-item-left">
                                     <div class="skill-item-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                            <path
+                                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" />
+                                        </svg>
                                     </div>
                                     <span class="skill-item-name">Python</span>
                                 </div>
@@ -381,7 +459,10 @@
                             <div class="skill-item">
                                 <div class="skill-item-left">
                                     <div class="skill-item-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 2l20 10L2 22V2z"/><path d="M2 12h10"/></svg>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                            <path d="M2 2l20 10L2 22V2z" />
+                                            <path d="M2 12h10" />
+                                        </svg>
                                     </div>
                                     <span class="skill-item-name">Kotlin</span>
                                 </div>
@@ -391,7 +472,10 @@
                             <div class="skill-item">
                                 <div class="skill-item-left">
                                     <div class="skill-item-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                        </svg>
                                     </div>
                                     <span class="skill-item-name">Git &amp; GitHub</span>
                                 </div>
@@ -405,8 +489,12 @@
                     <div class="skills-card">
                         <div class="skills-card-header">
                             <div class="skills-card-header-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                                 </svg>
                             </div>
                             <div>
@@ -419,7 +507,9 @@
                             <div class="skill-item skill-item-soft">
                                 <div class="skill-item-left">
                                     <div class="skill-item-check">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
                                     </div>
                                     <span class="skill-item-name">Problem Solving</span>
                                 </div>
@@ -429,7 +519,9 @@
                             <div class="skill-item skill-item-soft">
                                 <div class="skill-item-left">
                                     <div class="skill-item-check">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
                                     </div>
                                     <span class="skill-item-name">Team Collaboration</span>
                                 </div>
@@ -439,7 +531,9 @@
                             <div class="skill-item skill-item-soft">
                                 <div class="skill-item-left">
                                     <div class="skill-item-check">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
                                     </div>
                                     <span class="skill-item-name">Fast Learner</span>
                                 </div>
@@ -449,7 +543,9 @@
                             <div class="skill-item skill-item-soft">
                                 <div class="skill-item-left">
                                     <div class="skill-item-check">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
                                     </div>
                                     <span class="skill-item-name">Attention to Detail</span>
                                 </div>
@@ -459,7 +555,9 @@
                             <div class="skill-item skill-item-soft">
                                 <div class="skill-item-left">
                                     <div class="skill-item-check">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
                                     </div>
                                     <span class="skill-item-name">Time Management</span>
                                 </div>
@@ -469,7 +567,9 @@
                             <div class="skill-item skill-item-soft">
                                 <div class="skill-item-left">
                                     <div class="skill-item-check">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
                                     </div>
                                     <span class="skill-item-name">Adaptability</span>
                                 </div>
@@ -479,7 +579,9 @@
                             <div class="skill-item skill-item-soft">
                                 <div class="skill-item-left">
                                     <div class="skill-item-check">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
                                     </div>
                                     <span class="skill-item-name">Critical Thinking</span>
                                 </div>
@@ -489,7 +591,9 @@
                             <div class="skill-item skill-item-soft">
                                 <div class="skill-item-left">
                                     <div class="skill-item-check">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
                                     </div>
                                     <span class="skill-item-name">Communication</span>
                                 </div>
@@ -506,34 +610,49 @@
         <!-- Projects Section -->
 
 
-        <section id="projects" class="py-20 px-4 sm:px-8 md:px-12 bg-sumi-black relative border-b border-white/5 reveal">
+        <section id="projects"
+            class="py-20 px-4 sm:px-8 md:px-12 bg-sumi-black relative border-b border-white/5 reveal">
             <div class="container mx-auto">
                 <div class="text-center mb-16">
                     <span class="jp-subtitle text-sm">プロジェクト</span>
                     <h2 class="text-4xl md:text-5xl font-bold text-shiro-white mt-2">My Projects</h2>
                     <div class="w-16 h-1 bg-kurenai-red mx-auto mt-6"></div>
                 </div>
-                
+
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Project Card -->
                     <a href="syncro.html" class="project-card block rounded-lg overflow-hidden group cursor-pointer">
                         <div class="relative h-56 overflow-hidden">
-                            <div class="absolute inset-0 bg-kurenai-red/20 opacity-0 group-hover:opacity-100 transition-opacity z-10"></div>
-                            <img src="https://placehold.co/600x400/242424/C91F37?text=Project+1" alt="Project 1 Image" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div
+                                class="absolute inset-0 bg-kurenai-red/20 opacity-0 group-hover:opacity-100 transition-opacity z-10">
+                            </div>
+                            <img src="https://placehold.co/600x400/242424/C91F37?text=Project+1" alt="Project 1 Image"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                         </div>
                         <div class="p-8">
-                            <h3 class="text-2xl font-bold text-shiro-white mb-3 group-hover:text-kurenai-red transition-colors">Syncro</h3>
+                            <h3
+                                class="text-2xl font-bold text-shiro-white mb-3 group-hover:text-kurenai-red transition-colors">
+                                Syncro</h3>
                             <p class="text-gin-silver leading-relaxed mb-4 text-sm">
-                                A brief description of this project. Demonstrating technical skills and problem-solving capabilities.
+                                A brief description of this project. Demonstrating technical skills and problem-solving
+                                capabilities.
                             </p>
                             <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="px-2 py-1 bg-sumi-black border border-kurenai-red/30 rounded text-[0.65rem] font-bold text-shiro-white tracking-widest">REACT</span>
-                                <span class="px-2 py-1 bg-sumi-black border border-kurenai-red/30 rounded text-[0.65rem] font-bold text-shiro-white tracking-widest">TAILWIND</span>
-                                <span class="px-2 py-1 bg-sumi-black border border-kurenai-red/30 rounded text-[0.65rem] font-bold text-shiro-white tracking-widest">FIGMA</span>
+                                <span
+                                    class="px-2 py-1 bg-sumi-black border border-kurenai-red/30 rounded text-[0.65rem] font-bold text-shiro-white tracking-widest">REACT</span>
+                                <span
+                                    class="px-2 py-1 bg-sumi-black border border-kurenai-red/30 rounded text-[0.65rem] font-bold text-shiro-white tracking-widest">TAILWIND</span>
+                                <span
+                                    class="px-2 py-1 bg-sumi-black border border-kurenai-red/30 rounded text-[0.65rem] font-bold text-shiro-white tracking-widest">FIGMA</span>
                             </div>
-                            <span class="inline-flex items-center text-kurenai-red font-bold text-sm uppercase tracking-wider group-hover:text-shiro-white transition-colors">
-                                View Project 
-                                <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            <span
+                                class="inline-flex items-center text-kurenai-red font-bold text-sm uppercase tracking-wider group-hover:text-shiro-white transition-colors">
+                                View Project
+                                <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
                             </span>
                         </div>
                     </a>
@@ -542,73 +661,108 @@
         </section>
 
         <!-- Clients Section -->
-        <section id="clients" class="py-20 px-4 sm:px-8 md:px-12 bg-sumi-black clients-section border-b border-white/5 reveal">
+        <section id="clients"
+            class="py-20 px-4 sm:px-8 md:px-12 bg-sumi-black clients-section border-b border-white/5 reveal">
             <div class="container mx-auto">
                 <div class="text-center mb-16">
                     <span class="jp-subtitle text-sm">職歴</span>
                     <h2 class="text-4xl md:text-5xl font-bold text-shiro-white mt-2">Experience</h2>
                     <div class="w-16 h-1 bg-kurenai-red mx-auto mt-6"></div>
                 </div>
-                
+
                 <div class="relative max-w-4xl mx-auto ml-4 md:ml-auto md:mr-auto">
                     <!-- Vertical line -->
                     <div class="absolute left-[9px] top-6 bottom-0 w-[2px] bg-kurenai-red/30"></div>
-                    
+
                     <div class="space-y-12 relative">
 
                         <!-- Experience 1 -->
                         <div class="relative pl-10 md:pl-16 group">
                             <!-- Node Dot -->
-                            <div class="absolute left-[9px] top-4 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-sumi-black border-[5px] border-kurenai-red rounded-full shadow-[0_0_15px_rgba(201,31,55,0.8)] group-hover:bg-kurenai-red transition-colors z-10"></div>
+                            <div
+                                class="absolute left-[9px] top-4 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-sumi-black border-[5px] border-kurenai-red rounded-full shadow-[0_0_15px_rgba(201,31,55,0.8)] group-hover:bg-kurenai-red transition-colors z-10">
+                            </div>
                             <!-- Ping Animation -->
-                            <div class="absolute left-[9px] top-4 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-kurenai-red rounded-full animate-ping opacity-20 group-hover:opacity-100 z-0"></div>
-                            
+                            <div
+                                class="absolute left-[9px] top-4 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-kurenai-red rounded-full animate-ping opacity-20 group-hover:opacity-100 z-0">
+                            </div>
+
                             <!-- Header outside the card -->
                             <div class="mb-4">
                                 <h3 class="text-2xl font-bold text-shiro-white leading-tight">IDEAL Indonesia</h3>
                                 <div class="flex flex-col sm:flex-row sm:items-center mt-1">
-                                    <p class="text-kurenai-red text-sm font-bold uppercase tracking-wider">Graphic Design Intern</p>
+                                    <p class="text-kurenai-red text-sm font-bold uppercase tracking-wider">Graphic
+                                        Design Intern</p>
                                     <span class="hidden sm:inline-block text-white/20 mx-3">|</span>
-                                    <p class="text-gin-silver text-sm mt-1 sm:mt-0 font-jp tracking-wider"> Mei 2025 - Agustus 2025</p>
+                                    <p class="text-gin-silver text-sm mt-1 sm:mt-0 font-jp tracking-wider"> May 2025 -
+                                        August 2025</p>
                                 </div>
                             </div>
 
-                            <div class="experience-card flex flex-col sm:flex-row gap-6 items-center sm:items-start relative">
-                                <div class="flex-shrink-0 w-20 h-20 bg-white rounded-md p-2 flex items-center justify-center shadow-lg sm:mt-0">
-                                    <img src="images/ideallogo.png" alt="Ideal" class="max-w-full max-h-full object-contain">
+                            <div
+                                class="experience-card flex flex-col sm:flex-row gap-6 items-center sm:items-start relative">
+                                <div
+                                    class="flex-shrink-0 w-20 h-20 bg-white rounded-md p-2 flex items-center justify-center shadow-lg sm:mt-0">
+                                    <img src="images/ideallogo.png" alt="Ideal"
+                                        class="max-w-full max-h-full object-contain">
                                 </div>
                                 <div class="flex-1">
                                     <p class="text-gin-silver text-sm leading-relaxed text-justify">
-                                        Selama 4 bulan menjalani program magang di IDEAL Indonesia sebagai Graphic Design Intern, saya berperan dalam mendukung kebutuhan desain visual perusahaan, baik untuk keperluan branding, promosi, maupun media sosial. Dalam peran ini, saya terlibat dalam pembuatan konten visual, seperti desain poster, banner, dan materi promosi digital, serta membantu menjaga konsistensi identitas visual perusahaan agar selaras dengan brand guideline yang ada. Selain itu, saya juga berkesempatan untuk mengembangkan ide-ide kreatif dalam tim, belajar mengelola permintaan desain dengan tenggat waktu tertentu, serta menggunakan berbagai tools desain grafis untuk menghasilkan karya yang efektif dan menarik.
+                                        During my four-month internship at IDEAL Indonesia as a Graphic Design Intern, I
+                                        played a role in supporting the company's visual design needs, both for
+                                        branding, promotions, and social media. In this role, I was involved in creating
+                                        visual content, such as posters, banners, and digital promotional materials, and
+                                        helped maintain the consistency of the company's visual identity to align with
+                                        existing brand guidelines. In addition, I also had the opportunity to develop
+                                        creative ideas within the team, learn to manage design requests with specific
+                                        deadlines, and use various graphic design tools to produce effective and
+                                        attractive work.
                                     </p>
                                 </div>
                             </div>
-                        </div>               
+                        </div>
 
                         <!-- Experience 2 -->
                         <div class="relative pl-10 md:pl-16 group">
                             <!-- Node Dot -->
-                            <div class="absolute left-[9px] top-4 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-sumi-black border-[5px] border-kurenai-red rounded-full shadow-[0_0_15px_rgba(201,31,55,0.8)] group-hover:bg-kurenai-red transition-colors z-10"></div>
+                            <div
+                                class="absolute left-[9px] top-4 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-sumi-black border-[5px] border-kurenai-red rounded-full shadow-[0_0_15px_rgba(201,31,55,0.8)] group-hover:bg-kurenai-red transition-colors z-10">
+                            </div>
                             <!-- Ping Animation -->
-                            <div class="absolute left-[9px] top-4 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-kurenai-red rounded-full animate-ping opacity-20 group-hover:opacity-100 z-0"></div>
-                            
+                            <div
+                                class="absolute left-[9px] top-4 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-kurenai-red rounded-full animate-ping opacity-20 group-hover:opacity-100 z-0">
+                            </div>
+
                             <!-- Header outside the card -->
                             <div class="mb-4">
-                                <h3 class="text-2xl font-bold text-shiro-white leading-tight">PT PAL Indonesia (Persero)</h3>
+                                <h3 class="text-2xl font-bold text-shiro-white leading-tight">PT PAL Indonesia (Persero)
+                                </h3>
                                 <div class="flex flex-col sm:flex-row sm:items-center mt-1">
                                     <p class="text-kurenai-red text-sm font-bold uppercase tracking-wider">IT Intern</p>
                                     <span class="hidden sm:inline-block text-white/20 mx-3">|</span>
-                                    <p class="text-gin-silver text-sm mt-1 sm:mt-0 font-jp tracking-wider">Agustus 2025 - Desember 2025</p>
+                                    <p class="text-gin-silver text-sm mt-1 sm:mt-0 font-jp tracking-wider">August 2025 -
+                                        December 2025</p>
                                 </div>
                             </div>
 
-                            <div class="experience-card flex flex-col sm:flex-row gap-6 items-center sm:items-start relative">
-                                <div class="flex-shrink-0 w-20 h-20 bg-white rounded-md p-2 flex items-center justify-center shadow-lg sm:mt-0">
-                                    <img src="images/logoPAL.png" alt="PT PAL" class="max-w-full max-h-full object-contain">
+                            <div
+                                class="experience-card flex flex-col sm:flex-row gap-6 items-center sm:items-start relative">
+                                <div
+                                    class="flex-shrink-0 w-20 h-20 bg-white rounded-md p-2 flex items-center justify-center shadow-lg sm:mt-0">
+                                    <img src="images/logoPAL.png" alt="PT PAL"
+                                        class="max-w-full max-h-full object-contain">
                                 </div>
                                 <div class="flex-1">
                                     <p class="text-gin-silver text-sm leading-relaxed text-justify">
-                                        Selama 4 bulan menjalani program magang di PT PAL Indonesia (Persero) pada Divisi Teknologi Informasi, saya berperan sebagai mahasiswa magang yang terlibat langsung dalam pengembangan salah satu proyek internal perusahaan, yaitu aplikasi absensi karyawan. Dalam peran ini, saya berkontribusi pada beberapa aspek penting, mulai dari analisis kebutuhan pengguna, perancangan alur sistem, implementasi fitur inti, hingga proses uji coba aplikasi. Selain itu, saya juga mendapatkan pengalaman bekerja secara kolaboratif dengan tim TI perusahaan, mempelajari alur kerja pengembangan perangkat lunak di lingkungan industri, serta memahami bagaimana solusi digital dapat membantu meningkatkan efisiensi operasional perusahaan.
+                                        During my four-month internship at PT PAL Indonesia (Persero) in the Information
+                                        Technology Division, I served as a student intern directly involved in the
+                                        development of one of the company's internal projects, an employee attendance
+                                        application. In this role, I contributed to several key aspects, from user needs
+                                        analysis and system flow design to core feature implementation and application
+                                        testing. Furthermore, I gained experience working collaboratively with the
+                                        company's IT team, learned about software development workflows in an industrial
+                                        environment, and understood how digital solutions can help improve the company's
+                                        operational efficiency.
                                     </p>
                                 </div>
                             </div>
@@ -617,31 +771,47 @@
                         <!-- Experience 3 -->
                         <div class="relative pl-10 md:pl-16 group">
                             <!-- Node Dot -->
-                            <div class="absolute left-[9px] top-4 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-sumi-black border-[5px] border-kurenai-red rounded-full shadow-[0_0_15px_rgba(201,31,55,0.8)] group-hover:bg-kurenai-red transition-colors z-10"></div>
+                            <div
+                                class="absolute left-[9px] top-4 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-sumi-black border-[5px] border-kurenai-red rounded-full shadow-[0_0_15px_rgba(201,31,55,0.8)] group-hover:bg-kurenai-red transition-colors z-10">
+                            </div>
                             <!-- Ping Animation -->
-                            <div class="absolute left-[9px] top-4 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-kurenai-red rounded-full animate-ping opacity-20 group-hover:opacity-100 z-0"></div>
-                            
+                            <div
+                                class="absolute left-[9px] top-4 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-kurenai-red rounded-full animate-ping opacity-20 group-hover:opacity-100 z-0">
+                            </div>
+
                             <!-- Header outside the card -->
                             <div class="mb-4">
-                                <h3 class="text-2xl font-bold text-shiro-white leading-tight">Coding Camp 2026 by DBS Foundation</h3>
+                                <h3 class="text-2xl font-bold text-shiro-white leading-tight">Coding Camp 2026 by DBS
+                                    Foundation</h3>
                                 <div class="flex flex-col sm:flex-row sm:items-center mt-1">
-                                    <p class="text-kurenai-red text-sm font-bold uppercase tracking-wider">AI Engineer Cohort</p>
+                                    <p class="text-kurenai-red text-sm font-bold uppercase tracking-wider">AI Engineer
+                                        Cohort</p>
                                     <span class="hidden sm:inline-block text-white/20 mx-3">|</span>
-                                    <p class="text-gin-silver text-sm mt-1 sm:mt-0 font-jp tracking-wider"> Februari 2026 - Juli 2026</p>
+                                    <p class="text-gin-silver text-sm mt-1 sm:mt-0 font-jp tracking-wider"> February
+                                        2026 - July 2026</p>
                                 </div>
                             </div>
 
-                            <div class="experience-card flex flex-col sm:flex-row gap-6 items-center sm:items-start relative">
-                                <div class="flex-shrink-0 w-20 h-20 bg-white rounded-md p-2 flex items-center justify-center shadow-lg sm:mt-0">
-                                    <img src="images/logo_codingcamp.png" alt="Ideal" class="max-w-full max-h-full object-contain">
+                            <div
+                                class="experience-card flex flex-col sm:flex-row gap-6 items-center sm:items-start relative">
+                                <div
+                                    class="flex-shrink-0 w-20 h-20 bg-white rounded-md p-2 flex items-center justify-center shadow-lg sm:mt-0">
+                                    <img src="images/logo_codingcamp.png" alt="Ideal"
+                                        class="max-w-full max-h-full object-contain">
                                 </div>
                                 <div class="flex-1">
                                     <p class="text-gin-silver text-sm leading-relaxed text-justify">
-                                        Selama 5 bulan menjalani program Studi Independen di program Coding Camp 2026 by DBS Foundation sebagai AI Engineer Cohort, saya berperan dalam mempelajari machine learning dan artificial intelligence sampai ke Generative AI. Dalam program ini, saya diajarkan berbagai macam hal, mulai dari basic machine learning, data processing, model development, evaluation, dan deployment. Selain itu, saya juga berkesempatan untuk berkolaborasi dalam tim, belajar mengelola permintaan dengan tenggat waktu tertentu, serta menggunakan berbagai tools AI untuk menghasilkan karya yang efektif dan menarik.
+                                        During my five-month Independent Study program at DBS Foundation's Coding Camp
+                                        2026 as an AI Engineer Cohort, I played a role in learning machine learning and
+                                        artificial intelligence, all the way up to Generative AI. In this program, I was
+                                        taught various things, from basic machine learning, data processing, model
+                                        development, evaluation, and deployment. In addition, I also had the opportunity
+                                        to collaborate in a team, learn how to manage requests with specific deadlines,
+                                        and use various AI tools to produce effective and engaging work.
                                     </p>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
                 </div>
             </div>
@@ -654,30 +824,39 @@
                     <span class="jp-subtitle text-sm">連絡先</span>
                     <h2 class="text-3xl md:text-4xl font-bold text-shiro-white mt-2">Connect With Me</h2>
                 </div>
-                
+
                 <!-- Contact Form -->
                 <div class="bg-sumi-black p-8 md:p-10 rounded-lg shadow-xl mb-16 border border-white/5">
                     <form action="mailto:imareza107@gmail.com" method="POST" enctype="text/plain" class="space-y-6">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                                <label class="block text-kurenai-red text-xs font-bold uppercase tracking-wider mb-2" for="name">Name</label>
-                                <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+                                <label class="block text-kurenai-red text-xs font-bold uppercase tracking-wider mb-2"
+                                    for="name">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="John Doe"
+                                    required>
                             </div>
                             <div>
-                                <label class="block text-kurenai-red text-xs font-bold uppercase tracking-wider mb-2" for="email">Email</label>
-                                <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
+                                <label class="block text-kurenai-red text-xs font-bold uppercase tracking-wider mb-2"
+                                    for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-input"
+                                    placeholder="john@example.com" required>
                             </div>
                         </div>
                         <div>
-                            <label class="block text-kurenai-red text-xs font-bold uppercase tracking-wider mb-2" for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Inquiry" required>
+                            <label class="block text-kurenai-red text-xs font-bold uppercase tracking-wider mb-2"
+                                for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input"
+                                placeholder="Project Inquiry" required>
                         </div>
                         <div>
-                            <label class="block text-kurenai-red text-xs font-bold uppercase tracking-wider mb-2" for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" class="form-input resize-none" placeholder="Hello, I would like to talk about..." required></textarea>
+                            <label class="block text-kurenai-red text-xs font-bold uppercase tracking-wider mb-2"
+                                for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" class="form-input resize-none"
+                                placeholder="Hello, I would like to talk about..." required></textarea>
                         </div>
                         <div class="text-center mt-8">
-                            <button type="submit" class="bg-kurenai-red text-shiro-white font-bold uppercase tracking-widest text-sm py-3 px-10 rounded hover:bg-[#a6172b] transition-all transform hover:-translate-y-1 shadow-[0_0_15px_rgba(201,31,55,0.4)]">
+                            <button type="submit"
+                                class="bg-kurenai-red text-shiro-white font-bold uppercase tracking-widest text-sm py-3 px-10 rounded hover:bg-[#a6172b] transition-all transform hover:-translate-y-1 shadow-[0_0_15px_rgba(201,31,55,0.4)]">
                                 Send Message
                             </button>
                         </div>
@@ -686,23 +865,47 @@
 
                 <div class="flex justify-center space-x-6 sm:space-x-8">
                     <!-- GitHub -->
-                    <a href="https://github.com/Aioloo" target="_blank" class="flex items-center justify-center w-14 h-14 rounded-full bg-sumi-black text-gin-silver icon-glow">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.867-.013-1.701-2.782.605-3.368-1.343-3.368-1.343-.455-1.152-1.11-1.459-1.11-1.459-.908-.62.069-.608.069-.608 1.007.07 1.532 1.03 1.532 1.03.89 1.529 2.336 1.087 2.903.834.091-.647.35-1.087.636-1.336-2.22-.252-4.555-1.11-4.555-4.93 0-1.087.389-1.979 1.029-2.675-.103-.252-.446-1.267.098-2.645 0 0 .84-.268 2.75 1.022A9.606 9.606 0 0112 6.864c.85.004 1.701.116 2.508.337 1.909-1.29 2.748-1.022 2.748-1.022.545 1.378.203 2.393.098 2.645.64.696 1.028 1.588 1.028 2.675 0 3.83-2.339 4.675-4.568 4.922.358.307.678.915.678 1.848 0 1.336-.012 2.413-.012 2.742 0 .268.18.577.688.484C20.138 20.2 23 16.444 23 12.017 23 6.484 18.522 2 13 2h-1z" clip-rule="evenodd"></path></svg>
+                    <a href="https://github.com/Aioloo" target="_blank"
+                        class="flex items-center justify-center w-14 h-14 rounded-full bg-sumi-black text-gin-silver icon-glow">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.867-.013-1.701-2.782.605-3.368-1.343-3.368-1.343-.455-1.152-1.11-1.459-1.11-1.459-.908-.62.069-.608.069-.608 1.007.07 1.532 1.03 1.532 1.03.89 1.529 2.336 1.087 2.903.834.091-.647.35-1.087.636-1.336-2.22-.252-4.555-1.11-4.555-4.93 0-1.087.389-1.979 1.029-2.675-.103-.252-.446-1.267.098-2.645 0 0 .84-.268 2.75 1.022A9.606 9.606 0 0112 6.864c.85.004 1.701.116 2.508.337 1.909-1.29 2.748-1.022 2.748-1.022.545 1.378.203 2.393.098 2.645.64.696 1.028 1.588 1.028 2.675 0 3.83-2.339 4.675-4.568 4.922.358.307.678.915.678 1.848 0 1.336-.012 2.413-.012 2.742 0 .268.18.577.688.484C20.138 20.2 23 16.444 23 12.017 23 6.484 18.522 2 13 2h-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
                     </a>
-                    
+
                     <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/in/ingmareza-nistyo-athallah-a4210a334/" target="_blank" class="flex items-center justify-center w-14 h-14 rounded-full bg-sumi-black text-gin-silver icon-glow">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.041 5.922-4.223 5.922 0v8.399h4.968v-10.99c0-3.34-1.144-5.068-3.955-5.068-2.36 0-3.619 1.503-4.217 2.969h-.07v-2.536h-4.978z"></path></svg>
+                    <a href="https://www.linkedin.com/in/ingmareza-nistyo-athallah-a4210a334/" target="_blank"
+                        class="flex items-center justify-center w-14 h-14 rounded-full bg-sumi-black text-gin-silver icon-glow">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.041 5.922-4.223 5.922 0v8.399h4.968v-10.99c0-3.34-1.144-5.068-3.955-5.068-2.36 0-3.619 1.503-4.217 2.969h-.07v-2.536h-4.978z">
+                            </path>
+                        </svg>
                     </a>
 
                     <!-- Instagram -->
-                    <a href="https://instagram.com/imareza_" target="_blank" class="flex items-center justify-center w-14 h-14 rounded-full bg-sumi-black text-gin-silver icon-glow">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07c3.252.148 4.771 1.691 4.919 4.919.058 1.265.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.148 3.228-1.667 4.772-4.919 4.919-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-3.251-.147-4.771-1.692-4.919-4.919-.058-1.265-.07-1.646-.07-4.85s.012-3.584.07-4.85c.148-3.227 1.668-4.772 4.919-4.919 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.205-6.78 2.628-6.983 6.98-.059 1.28-.073 1.689-.073 4.948s.014 3.668.072 4.948c.204 4.352 2.628 6.78 6.983 6.98 1.28.058 1.689.072 4.947.072s3.668-.014 4.948-.072c4.354-.203 6.782-2.628 6.985-6.98.058-1.28.073-1.688.073-4.948s-.014-3.668-.072-4.947c-.204-4.352-2.63-6.78-6.985-6.98-1.28-.058-1.688-.073-4.948-.073zm0 5.869c-3.415 0-6.182 2.766-6.182 6.182s2.767 6.182 6.182 6.182 6.182-2.766 6.182-6.182-2.767-6.182-6.182-6.182zm0 10.163c-2.204 0-3.985-1.78-3.985-3.985s1.78-3.985 3.985-3.985 3.985 1.78 3.985 3.985-1.781 3.985-3.985 3.985zm6.417-11.751c-.813 0-1.472.659-1.472 1.472s.659 1.472 1.472 1.472 1.472-.659 1.472-1.472-.659-1.472-1.472-1.472z"></path></svg>
+                    <a href="https://instagram.com/imareza_" target="_blank"
+                        class="flex items-center justify-center w-14 h-14 rounded-full bg-sumi-black text-gin-silver icon-glow">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07c3.252.148 4.771 1.691 4.919 4.919.058 1.265.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.148 3.228-1.667 4.772-4.919 4.919-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-3.251-.147-4.771-1.692-4.919-4.919-.058-1.265-.07-1.646-.07-4.85s.012-3.584.07-4.85c.148-3.227 1.668-4.772 4.919-4.919 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.205-6.78 2.628-6.983 6.98-.059 1.28-.073 1.689-.073 4.948s.014 3.668.072 4.948c.204 4.352 2.628 6.78 6.983 6.98 1.28.058 1.689.072 4.947.072s3.668-.014 4.948-.072c4.354-.203 6.782-2.628 6.985-6.98.058-1.28.073-1.688.073-4.948s-.014-3.668-.072-4.947c-.204-4.352-2.63-6.78-6.985-6.98-1.28-.058-1.688-.073-4.948-.073zm0 5.869c-3.415 0-6.182 2.766-6.182 6.182s2.767 6.182 6.182 6.182 6.182-2.766 6.182-6.182-2.767-6.182-6.182-6.182zm0 10.163c-2.204 0-3.985-1.78-3.985-3.985s1.78-3.985 3.985-3.985 3.985 1.78 3.985 3.985-1.781 3.985-3.985 3.985zm6.417-11.751c-.813 0-1.472.659-1.472 1.472s.659 1.472 1.472 1.472 1.472-.659 1.472-1.472-.659-1.472-1.472-1.472z">
+                            </path>
+                        </svg>
                     </a>
-                    
+
                     <!-- Twitter/X -->
-                    <a href="https://twitter.com/Aioloo_" target="_blank" class="flex items-center justify-center w-14 h-14 rounded-full bg-sumi-black text-gin-silver icon-glow">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.13l-5.213-6.817L4.99 22.25H1.68l7.73-8.835L1.254 2.25H8.08l4.714 6.22L18.244 2.25zM17.25 20.692L4.298 3.444h2.812l12.952 17.248h-2.812z"></path></svg>
+                    <a href="https://twitter.com/Aioloo_" target="_blank"
+                        class="flex items-center justify-center w-14 h-14 rounded-full bg-sumi-black text-gin-silver icon-glow">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.13l-5.213-6.817L4.99 22.25H1.68l7.73-8.835L1.254 2.25H8.08l4.714 6.22L18.244 2.25zM17.25 20.692L4.298 3.444h2.812l12.952 17.248h-2.812z">
+                            </path>
+                        </svg>
                     </a>
                 </div>
             </div>
@@ -712,7 +915,8 @@
     <!-- Footer -->
     <footer class="bg-sumi-black py-8 text-center border-t border-white/5">
         <div class="container mx-auto">
-            <p class="text-gin-silver text-sm font-jp tracking-wider">&copy; 2025 <span class="text-kurenai-red font-bold">Ingmareza Nistyo Athallah</span>. All rights reserved.</p>
+            <p class="text-gin-silver text-sm font-jp tracking-wider">&copy; 2025 <span
+                    class="text-kurenai-red font-bold">Ingmareza Nistyo Athallah</span>. All rights reserved.</p>
         </div>
     </footer>
 
@@ -723,7 +927,7 @@
             // ── Reveal on Scroll ──
             const reveals = document.querySelectorAll('.reveal');
             const revealOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
-            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+            const revealOnScroll = new IntersectionObserver(function (entries, observer) {
                 entries.forEach(entry => {
                     if (!entry.isIntersecting) return;
                     entry.target.classList.add('active');
@@ -740,11 +944,11 @@
             bttBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
             // ── Light / Dark Mode Toggle ──
-            const modeBtn  = document.getElementById('mode-toggle');
+            const modeBtn = document.getElementById('mode-toggle');
             const modeIcon = document.getElementById('mode-icon');
-            const modeTip  = document.getElementById('mode-tip');
+            const modeTip = document.getElementById('mode-tip');
 
-            const svgSun  = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>';
+            const svgSun = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>';
             const svgMoon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
 
             let isLight = false;
@@ -865,7 +1069,7 @@
                     const inHero = e.clientY >= rect.top && e.clientY <= rect.bottom;
                     glow.style.opacity = inHero ? '1' : '0';
                     glow.style.left = e.clientX + 'px';
-                    glow.style.top  = e.clientY + 'px';
+                    glow.style.top = e.clientY + 'px';
                 }, { passive: true });
             }
 
@@ -874,13 +1078,13 @@
             const cursorRing = document.getElementById('cursor-ring');
             let mouseX = 0, mouseY = 0;
             let ringX = 0, ringY = 0;
-            
+
             // Only activate if pointer is fine (not mobile/touch)
             if (window.matchMedia('(pointer: fine)').matches) {
                 document.addEventListener('mousemove', (e) => {
                     mouseX = e.clientX;
                     mouseY = e.clientY;
-                    
+
                     // Dot follows instantly
                     cursorDot.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
                 });
@@ -910,13 +1114,13 @@
                     const rect = card.getBoundingClientRect();
                     const x = e.clientX - rect.left;
                     const y = e.clientY - rect.top;
-                    
+
                     // Calculate rotation (max 10 degrees)
                     const centerX = rect.width / 2;
                     const centerY = rect.height / 2;
                     const rotateX = ((y - centerY) / centerY) * -5;
                     const rotateY = ((x - centerX) / centerX) * 5;
-                    
+
                     card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
                     card.style.transition = 'none'; // remove transition during mouse move
                 });
@@ -934,17 +1138,31 @@
         <!-- Light/Dark Mode Toggle -->
         <button id="mode-toggle" class="fab-btn fab-mode" aria-label="Toggle light mode">
             <span id="mode-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5" />
+                    <line x1="12" y1="1" x2="12" y2="3" />
+                    <line x1="12" y1="21" x2="12" y2="23" />
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                    <line x1="1" y1="12" x2="3" y2="12" />
+                    <line x1="21" y1="12" x2="23" y2="12" />
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                </svg>
             </span>
             <span id="mode-tip" class="fab-tooltip">Light Mode</span>
         </button>
         <!-- Back to Top -->
         <button id="back-to-top" class="fab-btn fab-btt" aria-label="Back to top">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="18 15 12 9 6 15" />
+            </svg>
             <span class="fab-tooltip">Back to Top</span>
         </button>
     </div>
 
 </body>
-</html>
 
+</html>
