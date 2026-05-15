@@ -112,17 +112,20 @@
         <div class="container mx-auto max-w-5xl reveal active">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-center">
                 <!-- Screen 1 -->
-                <div class="w-full max-w-[320px] mx-auto rounded-[2rem] overflow-hidden border-[6px] border-[#242424] shadow-2xl shadow-kurenai-red/20 group relative aspect-[9/19]">
+                <div
+                    class="w-full max-w-[320px] mx-auto rounded-[2rem] overflow-hidden border-[6px] border-[#242424] shadow-2xl shadow-kurenai-red/20 group relative aspect-[9/19]">
                     <img src="images/syncro_splash.png" alt="App Screen 1"
                         class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
                 </div>
                 <!-- Screen 2 (Sedikit turun untuk efek dinamis di Desktop) -->
-                <div class="hidden md:block w-full max-w-[320px] mx-auto rounded-[2rem] overflow-hidden border-[6px] border-[#242424] shadow-2xl shadow-kurenai-red/20 group relative aspect-[9/19] mt-16">
+                <div
+                    class="hidden md:block w-full max-w-[320px] mx-auto rounded-[2rem] overflow-hidden border-[6px] border-[#242424] shadow-2xl shadow-kurenai-red/20 group relative aspect-[9/19] mt-16">
                     <img src="images/syncro_home.png" alt="App Screen 2"
                         class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
                 </div>
                 <!-- Screen 3 -->
-                <div class="hidden md:block w-full max-w-[320px] mx-auto rounded-[2rem] overflow-hidden border-[6px] border-[#242424] shadow-2xl shadow-kurenai-red/20 group relative aspect-[9/19]">
+                <div
+                    class="hidden md:block w-full max-w-[320px] mx-auto rounded-[2rem] overflow-hidden border-[6px] border-[#242424] shadow-2xl shadow-kurenai-red/20 group relative aspect-[9/19]">
                     <img src="images/syncro_absensi.png" alt="App Screen 3"
                         class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
                 </div>
@@ -141,20 +144,34 @@
                         <h3 class="text-2xl font-bold text-shiro-white mb-4 border-l-4 border-kurenai-red pl-4">The
                             Challenge</h3>
                         <p class="text-gin-silver leading-relaxed text-justify">
-                            In developing Standify, the primary challenge was to create a user interface that feels both
-                            highly modern and extremely accessible. Users needed a way to interact with complex datasets
-                            without feeling overwhelmed. The performance needed to be top-tier, ensuring fast load times
-                            and smooth animations regardless of the device.
+                            In developing Syncro, an employee attendance application that I worked on during my time at
+                            PT PAL, the main challenge was adapting to a new technology stack while building a system
+                            that could support real internal attendance needs. For portfolio purposes, the application
+                            name and several sensitive details have been anonymized, but the project itself was
+                            developed based on an actual work context.
+                            This project became my first experience using the Django framework, so I had to learn how to
+                            manage routing, models, views, templates, authentication, and database integration within
+                            Django. Another major challenge was deploying the application to a company server for the
+                            first time, which required me to understand server configuration, deployment flow,
+                            environment setup, and how to ensure the application could run properly outside the local
+                            development environment.
+                            To maintain confidentiality, the real application name, database structure, and sensitive
+                            company data were modified or replaced with dummy information in this portfolio version.
                         </p>
                     </div>
                     <div>
                         <h3 class="text-2xl font-bold text-shiro-white mb-4 border-l-4 border-kurenai-red pl-4">The
                             Solution</h3>
                         <p class="text-gin-silver leading-relaxed text-justify">
-                            We implemented a modular frontend architecture utilizing modern CSS layout techniques (Grid
-                            & Flexbox) combined with semantic HTML. For the interactions, vanilla JavaScript was used to
-                            keep the bundle size minimal while achieving fluid animations. We also integrated a custom
-                            design system that supports dynamic theming (Light/Dark mode) to enhance user comfort.
+                            To solve these challenges, I built the application using Django with a fast learning process
+                            especially learning by doing. I implemented core attendance features such as employee data
+                            management, attendance records, and user access flow while keeping the interface simple and
+                            easy to use.
+                            For deployment, I learned and applied the basic process of preparing the application for a
+                            production environment, including adjusting configuration files, connecting the database
+                            safely, and ensuring the application could run on the company server. Sensitive information
+                            such as real employee data and database credentials was replaced with dummy or anonymized
+                            data to protect privacy and confidentiality.
                         </p>
                     </div>
                     <div>
@@ -167,8 +184,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gin-silver">Fully responsive layout optimized for mobile, tablet, and
-                                    desktop.</span>
+                                <span class="text-gin-silver">Employee attendance management system.</span>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-6 h-6 text-kurenai-red mr-3 flex-shrink-0" fill="none"
@@ -176,8 +192,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gin-silver">Integrated Light and Dark mode with smooth color
-                                    transitions.</span>
+                                <span class="text-gin-silver">Built using the Django framework.</span>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-6 h-6 text-kurenai-red mr-3 flex-shrink-0" fill="none"
@@ -185,8 +200,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gin-silver">Custom cursor and 3D card tilt interactions for a premium
-                                    feel.</span>
+                                <span class="text-gin-silver">Authentication and role-based access flow.</span>
                             </li>
                         </ul>
                     </div>
@@ -201,18 +215,19 @@
                             <div>
                                 <span
                                     class="text-xs font-bold text-kurenai-red uppercase tracking-wider block mb-1">Role</span>
-                                <span class="text-gin-silver font-medium">Frontend Developer / UI Designer</span>
+                                <span class="text-gin-silver font-medium">Fullstack Mobile Developer / UI/UX Designer
+                                    <span>
                             </div>
                             <div>
                                 <span
                                     class="text-xs font-bold text-kurenai-red uppercase tracking-wider block mb-1">Timeline</span>
-                                <span class="text-gin-silver font-medium">2 Months (Jan - Feb 2026)</span>
+                                <span class="text-gin-silver font-medium">5 Months (Aug - Des 2026)</span>
                             </div>
                             <div>
                                 <span
                                     class="text-xs font-bold text-kurenai-red uppercase tracking-wider block mb-1">Client
                                     / Type</span>
-                                <span class="text-gin-silver font-medium">Personal / Open Source</span>
+                                <span class="text-gin-silver font-medium">Internship / PT PAL Indonesia</span>
                             </div>
                         </div>
                     </div>
