@@ -1491,6 +1491,18 @@ body.light-mode .skill-pill-adv {
     border-color: rgba(194, 24, 91, 0.3) !important;
 }
 
+body.light-mode .skill-pill-mid {
+    background: rgba(217, 119, 6, 0.12) !important;
+    color: #b45309 !important;
+    border-color: rgba(217, 119, 6, 0.3) !important;
+}
+
+body.light-mode .skill-pill-basic {
+    background: rgba(100, 116, 139, 0.12) !important;
+    color: #475569 !important;
+    border-color: rgba(100, 116, 139, 0.3) !important;
+}
+
 body.light-mode .highlight-check,
 body.light-mode .skill-item-check {
     background: rgba(194, 24, 91, 0.1) !important;
